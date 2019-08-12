@@ -24,7 +24,7 @@ static sigset_t original_mask;
 static sigset_t sigalarm_mask;
 static struct sigaction original_signal_handler;
 static struct itimerval original_timer_interval;
-static int debug_enabled = 0;
+static int debug_enabled = 1;
 
 static void clear_pending_sigalrm_for_ruby_threads();
 static void install_ruby_sigalrm_handler(VALUE);
